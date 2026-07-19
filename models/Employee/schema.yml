@@ -1,0 +1,19 @@
+version: 2
+
+models:
+    - name: Emp
+      description: "A start dbt  model"
+      columns:
+          - name: employee_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: EmpRef
+      description: "A start dbt  model"
+      columns:
+          - name: employee_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null            
